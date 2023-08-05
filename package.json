@@ -18,10 +18,12 @@
 		"build": "tsup --minify",
 		"check": "pnpm run lint && pnpm run typecheck",
 		"dev": "tsup --watch",
+		"docs": "typedoc src/index.ts",
 		"lint": "eslint \"**/*.{ts,json,yml,yaml}\" --cache --color",
 		"lint:fix": "pnpm run lint --fix",
-		"docs": "typedoc src/index.ts",
+		"pr": "pnpm run lint:fix && pnpm run typecheck && pnpm run build && pnpm run test && pnpm run docs",
 		"release": "semantic-release",
+		"test": "jest",
 		"typecheck": "tsc --noEmit"
 	},
 	"release": {
