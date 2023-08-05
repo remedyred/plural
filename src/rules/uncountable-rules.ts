@@ -1,4 +1,4 @@
-import {PluralRuleMatch} from '../pluralize'
+import {PluralRuleMatch} from '@/pluralize'
 import pluralRules from './plural-rules'
 import singularRules from './singular-rules'
 

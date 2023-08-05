@@ -1,4 +1,4 @@
-import {PluralRule} from '../pluralize'
+import {PluralRule} from '@/pluralize'
 
 export default [
 	[/s?$/i, 's'],

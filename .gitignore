@@ -9,12 +9,11 @@ logs/
 
 # Dependencies
 node_modules/
-*.lock
-*-lock.yaml
-*-lock.json
 
 # Compiled files
 dist/
 
-# keep
+# Keep
 !.git*
+!.*ignore
+!.*rc*
